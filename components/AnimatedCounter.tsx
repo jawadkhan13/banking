@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
 import CountUp from 'react-countup';
 
-const AnimatedCounter = ({amount}: {amount: number}) => {
+const AnimatedCounter = ({ amount }: { amount: number }) => {
   return (
-    <div className='w-full'>
+    <div className="w-full">
       <CountUp 
-        end={amount}
-        decimal=','
         decimals={2}
-        prefix='$'
-        />
+        decimal=","
+        prefix="$"
+        end={amount} 
+      />
     </div>
   )
 }
